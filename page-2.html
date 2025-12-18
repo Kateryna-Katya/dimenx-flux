@@ -5,29 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/dimenx-flux/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/dimenx-flux/assets/styles-ChIVdWju.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span>
+      Dimenx-Flux
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#education" class="nav__link">Обучение</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline btn--header-action">Связаться</a>
+
+      <button class="burger" id="burger-btn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__container">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#hero" class="mobile-nav__link">Главная</a></li>
+        <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+        <li><a href="#education" class="mobile-nav__link">Обучение</a></li>
+        <li><a href="#contact" class="mobile-nav__link btn btn--primary">Связаться сейчас</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>support@dimenx-flux.org</p>
+      <p>+44 20 7946 0123</p>
+    </div>
+  </div>
+</div>
 
     <main>
       <div class="container">
@@ -39,19 +66,62 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="logo footer__logo">
+          <span class="logo__dot"></span>
+          Dimenx-Flux
+        </a>
+        <p class="footer__description">
+          Передовая цифровая инфраструктура для освоения технологий будущего. Обучаем сложному простыми словами.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Навигация</h4>
+        <ul class="footer__links">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О платформе</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Юридическая информация</h4>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты (UK)</h4>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="phone" class="icon-sm"></i>
+            <a href="tel:+442079460123">+44 20 7946 0123</a>
+          </li>
+          <li>
+            <i data-lucide="mail" class="icon-sm"></i>
+            <a href="mailto:support@dimenx-flux.org">support@dimenx-flux.org</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin" class="icon-sm"></i>
+            <span>22 Bishopsgate, London EC2N 4AJ, United Kingdom</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Dimenx-Flux. Все права защищены. Платформа уже доступна в Великобритании и странах ЕС.</p>
+    </div>
   </div>
 </footer>
-
   </body>
 </html>

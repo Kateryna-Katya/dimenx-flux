@@ -1,56 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/dimenx-flux/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инновации на пальцах — Dimenx-Flux</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap"
+    rel="stylesheet">
+\
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/dimenx-flux/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/dimenx-flux/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/dimenx-flux/assets/styles-ChIVdWju.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span>
+      Dimenx-Flux
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#education" class="nav__link">Обучение</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline btn--header-action">Связаться</a>
+
+      <button class="burger" id="burger-btn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__container">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#hero" class="mobile-nav__link">Главная</a></li>
+        <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+        <li><a href="#education" class="mobile-nav__link">Обучение</a></li>
+        <li><a href="#contact" class="mobile-nav__link btn btn--primary">Связаться сейчас</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>support@dimenx-flux.org</p>
+      <p>+44 20 7946 0123</p>
+    </div>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="badge" data-aos="fade-up">Платформа года</span>
+            <h1 class="hero__title" id="hero-title">Технология нового поколения</h1>
+            <p class="hero__subtitle">Воплотите мечты в реальность с передовой цифровой инфраструктурой. Доступ к
+                платформе открыт для резидентов Великобритании и ЕС.</p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#about" class="btn btn--text">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__blob"></div>
+            <img src="img/placeholder.png" alt="Innovation" class="hero__img">
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">О платформе</h2>
+            <p class="section-desc">Решения, которые меняют правила игры в образовании и бизнесе.</p>
+        </div>
+        <div class="about__grid">
+            <div class="about__card">
+                <i data-lucide="cpu" class="icon-lg"></i>
+                <h3>AI-инструменты</h3>
+                <p>Практики, применимые уже сегодня для реальных задач вашего проекта.</p>
+            </div>
+            <div class="about__card">
+                <i data-lucide="zap" class="icon-lg"></i>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Удобная адаптация без лишних сложностей.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__wrapper">
+            <div class="benefits__info">
+                <h2 class="section-title">Преимущества</h2>
+                <ul class="benefits__list">
+                    <li><i data-lucide="check-circle"></i> Легко разобраться без опыта</li>
+                    <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+                    <li><i data-lucide="check-circle"></i> Стратегия роста на базе инноваций</li>
+                    <li><i data-lucide="check-circle"></i> Программа пассивного дохода</li>
+                </ul>
+            </div>
+            <div class="benefits__image">
+                <img src="img/placeholder.png" alt="Benefits">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__box">
+            <h2 class="section-title">Инновации</h2>
+            <p>Переосмыслите подход к развитию. Наши методологии доказали свою эффективность на рынке Европы.</p>
+            <a href="#contact" class="btn btn--white">Запросить доступ</a>
+        </div>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Пошаговый путь</h2>
+            <p>Понятный каждому алгоритм достижения успеха.</p>
+        </div>
+        <div class="edu-steps">
+            <div class="step-item"><span>01</span>
+                <p>Пройти регистрацию</p>
+            </div>
+            <div class="step-item"><span>02</span>
+                <p>Оценить перспективы</p>
+            </div>
+            <div class="step-item"><span>03</span>
+                <p>Расширить горизонты</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__info">
+                <h2 class="section-title">Бесплатная консультация</h2>
+                <p>Оставьте заявку, и наш эксперт свяжется с вами в течение 15 минут.</p>
+            </div>
+            <form class="contact__form" id="main-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" id="phone-input" placeholder="Телефон (только цифры)" required>
+                </div>
+            <div class="form-captcha">
+                <div class="captcha-box">
+                    <span id="captcha-label"></span>
+                </div>
+                <div class="captcha-input-wrapper">
+                    <input type="number" id="captcha-input" placeholder="Ответ" required>
+                </div>
+            </div>
+                <div class="form-check">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Согласен с политикой обработки данных</label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Начать сейчас</button>
+                <div id="form-message" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="logo footer__logo">
+          <span class="logo__dot"></span>
+          Dimenx-Flux
+        </a>
+        <p class="footer__description">
+          Передовая цифровая инфраструктура для освоения технологий будущего. Обучаем сложному простыми словами.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Навигация</h4>
+        <ul class="footer__links">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О платформе</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Юридическая информация</h4>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты (UK)</h4>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="phone" class="icon-sm"></i>
+            <a href="tel:+442079460123">+44 20 7946 0123</a>
+          </li>
+          <li>
+            <i data-lucide="mail" class="icon-sm"></i>
+            <a href="mailto:support@dimenx-flux.org">support@dimenx-flux.org</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin" class="icon-sm"></i>
+            <span>22 Bishopsgate, London EC2N 4AJ, United Kingdom</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Dimenx-Flux. Все права защищены. Платформа уже доступна в Великобритании и странах ЕС.</p>
+    </div>
   </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 
   </body>
 </html>
